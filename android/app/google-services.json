@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "625640348358",
+    "project_id": "applacanasta",
+    "storage_bucket": "applacanasta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625640348358:android:cf080574204729c22b55c7",
+        "android_client_info": {
+          "package_name": "com.example.la_canasta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625640348358-k4ji8ig9fb0e92cdpfov47cb98hjvevi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgNZTxnsQkRE1xVGMVBHAj4ZrrFTMnvZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625640348358-k4ji8ig9fb0e92cdpfov47cb98hjvevi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "625640348358-4c74u84fosuja82s4e4n65odv3n0u943.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterPrueba.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>625640348358-masdiot74gnjvf4nlitgntg1a5rdb5lb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.625640348358-masdiot74gnjvf4nlitgntg1a5rdb5lb</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>625640348358-jsfu08tsumm969uhtt7eccu7rogd32lc.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD2s2UsTF2eX1V2Q08qbJnQZuMEkOBdrkk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>625640348358</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.laCanasta</string>
+	<key>PROJECT_ID</key>
+	<string>applacanasta</string>
+	<key>STORAGE_BUCKET</key>
+	<string>applacanasta.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:625640348358:ios:6956178711d82acc2b55c7</string>
+</dict>
+</plist>
