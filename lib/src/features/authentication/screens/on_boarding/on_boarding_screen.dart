@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
+import 'package:get/get.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -25,7 +25,13 @@ class OnBoardingScreen extends StatelessWidget {
           Positioned(
             bottom: 45,
             child: OutlinedButton(
-              onPressed: () => controller.animateToNextSlide(),
+              onPressed: () {
+                if(controller.lqcontroller.currentPage >= 2){
+                  Get.toNamed('/welcome');
+                } else {
+                  controller.animateToNextSlide();
+                }
+              },
               style: ElevatedButton.styleFrom(
                 side: const BorderSide(color: Colors.red),
                 shape: const CircleBorder(),
@@ -43,10 +49,10 @@ class OnBoardingScreen extends StatelessWidget {
             )
           ),
           Positioned(
-            top: 50,
+            top: 25,
             right: 20,
             child: TextButton(
-              onPressed: () => controller.skip(),
+              onPressed: () => Get.toNamed('/welcome'),
               child: const Text(
                 "Skip",
                 style: TextStyle(color: Colors.grey),
@@ -71,5 +77,4 @@ class OnBoardingScreen extends StatelessWidget {
       ),
     );
   }
-
 }

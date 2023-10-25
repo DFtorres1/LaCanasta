@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:la_canasta/src/constants/text_string.dart';
 import '../../../../constants/image_strings.dart';
-import '../../../main_page/screens/home_screen.dart';
-import '../register/register_screen.dart';
 //import 'package:firebase_auth/firebase_auth.dart';
 
 class CustomLoginPage extends StatefulWidget {
   const CustomLoginPage({super.key});
-
 
   @override
   State<CustomLoginPage> createState() => _CustomLoginPageState();
@@ -99,18 +97,7 @@ class _CustomLoginPageState extends State<CustomLoginPage> {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                          onPressed: (){}//signIn
-                          /*() {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => CustomHomePage(title: widget.title)
-                                ),
-                            );
-                          }
-
-                           */
-                          ,
+                          onPressed: () => Get.toNamed('/mainpage'),
                           style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all<Color>(Colors.black87),
                             shape: MaterialStateProperty.all<OutlinedBorder>(
@@ -129,14 +116,7 @@ class _CustomLoginPageState extends State<CustomLoginPage> {
                       )
                     ),
                     TextButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const CustomRegisterPage()
-                            ),
-                          );
-                        },
+                        onPressed: () => Get.toNamed('/signup'),
                         child: const Text(
                             'Crear cuenta',
                           style: TextStyle(

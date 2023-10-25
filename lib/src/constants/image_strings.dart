@@ -4,6 +4,9 @@ const String basePath = 'assets/images';
 const String authPath = '$basePath/authentication_images';
 const String onBoardPath = '$basePath/on_boarding_images';
 
+// -- Common Images
+const String lcLogo = '$basePath/LaCanastaLogo.png';
+
 // -- Authentication screen images
 const String farmerImage = '$authPath/Farmer.jpg';
 const String mapSpotIcon = '$authPath/MapSpotIcon.png';

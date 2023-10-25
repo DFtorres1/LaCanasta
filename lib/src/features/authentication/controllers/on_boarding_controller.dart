@@ -44,7 +44,7 @@ class OnBoardingController extends GetxController{
     ),
   ];
 
-  skip() => lqcontroller.jumpToPage(page: 2);
+  skip() => Get.toNamed('/welcome');
   animateToNextSlide() {
     int nextPage = lqcontroller.currentPage + 1;
     lqcontroller.animateToPage(page: nextPage);

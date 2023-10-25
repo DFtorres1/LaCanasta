@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../main_page/screens/home_screen.dart';
+import '../../../main_page/screens/home/home_screen.dart';
 
 class CustomRegisterPage extends StatefulWidget {
   const CustomRegisterPage({super.key});

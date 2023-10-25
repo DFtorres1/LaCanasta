@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:la_canasta/src/constants/text_string.dart';
-import '../common_mp_widgets/custom_search_bar.dart';
+import '../../common_mp_widgets/custom_search_bar.dart';
 
 class CustomHomePage extends StatefulWidget {
   const CustomHomePage({super.key});
@@ -28,6 +28,7 @@ class _CustomHomePageState extends State<CustomHomePage> {
         title: const Text(
           lcTitleCc,
           style: TextStyle(
+            fontSize: 30,
               fontFamily: 'PublicPixel',
               color: Colors.white
           ),
