@@ -1,4 +1,6 @@
 import 'package:get/get_navigation/src/routes/get_route.dart';
+import 'package:la_canasta/src/features/authentication/screens/forget_password/forget_password_mail/forget_password_mail.dart';
+import 'package:la_canasta/src/features/authentication/screens/forget_password/forget_password_otp/forget_password_otp.dart';
 import 'package:la_canasta/src/features/authentication/screens/login/login_screen.dart';
 import 'package:la_canasta/src/features/authentication/screens/on_boarding/on_boarding_screen.dart';
 import 'package:la_canasta/src/features/authentication/screens/register/register_screen.dart';
@@ -18,6 +20,18 @@ final routes = [
   GetPage(
     name: '/mainpage',
     page: () => const MainNavigationBar(),
+  ),
+  GetPage(
+    name: '/forgetpassmail',
+    page: () => const ForgetPasswordMailScreen(),
+  ),
+  GetPage(
+    name: '/forgetpassphone',
+    page: () => const ForgetPasswordMailScreen(),
+  ),
+  GetPage(
+    name: '/otpscreen',
+    page: () => const OTPScreen(),
   ),
   GetPage(
       name: '/login',

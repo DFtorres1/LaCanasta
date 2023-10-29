@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:la_canasta/src/constants/image_strings.dart';
 import 'package:la_canasta/src/constants/text_string.dart';
-import '../../common_mp_widgets/custom_search_bar.dart';
+import '../../common_mp_widgets/custom_app_bar.dart';
 
 class CustomHomePage extends StatefulWidget {
   const CustomHomePage({super.key});
@@ -10,53 +11,43 @@ class CustomHomePage extends StatefulWidget {
 }
 
 class _CustomHomePageState extends State<CustomHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).primaryColor,
-        centerTitle: true,
-        toolbarHeight: 100,
-        title: const Text(
-          lcTitleCc,
-          style: TextStyle(
-            fontSize: 30,
-              fontFamily: 'PublicPixel',
-              color: Colors.white
+      appBar: const CustomAppBar(),
+      body: ListView(
+        children: [
+          const Image(image: AssetImage(homeDiscount)),
+          Column(
+            children: [
+              Row(
+                children: [
+                  Text(
+                    lcHomeOffers,
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
+                  const Icon(Icons.discount)
+                ],
+              ),
+              ListView(
+                scrollDirection: Axis.horizontal,
+                children: const [
+                  Column(
+                    children: [
+                      Image(
+                        image: AssetImage(potatoesDiscount),
+                        height: 20,
+                      ),
+                      Text('35000')
+                    ],
+                  )
+                ],
+              )
+            ],
           ),
-        ),
-        bottom: const PreferredSize(
-            preferredSize: Size.fromHeight(0),
-            child: CustomSearchBar()
-        ),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+        ],
+      ),// This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

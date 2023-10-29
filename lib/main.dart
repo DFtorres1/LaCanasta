@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:get/get.dart';
 import 'package:la_canasta/src/features/authentication/screens/on_boarding/on_boarding_screen.dart';
-import 'package:la_canasta/src/features/authentication/screens/welcome/welcome_screen.dart';
+import 'package:la_canasta/src/repository/authentication_repository/authenticacion_repository.dart';
 import 'package:la_canasta/src/routing/routes.dart';
 import 'package:la_canasta/src/utils/theme/theme.dart';
-import 'src/features/authentication/screens/login/login_screen.dart';
-// import './screens/home_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
 
-Future<void> main() async {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
+  Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
-  ); //.then((value) => Get.put(AuthenticationRepository()));
+  ).then((value) => Get.put(AuthenticationRepository()));
+
   runApp(GestureDetector(
     onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
     child: const MyApp())
@@ -28,12 +27,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-          title: 'La canasta',
-          theme: LaCanastaTheme.lightTheme,
-          darkTheme: LaCanastaTheme.darkTheme,
-          themeMode: ThemeMode.system,
-          getPages: routes,
-          home: OnBoardingScreen()
-      );
+      title: 'La canasta',
+      themeMode: ThemeMode.system,
+      theme: LaCanastaTheme.lightTheme,
+      darkTheme: LaCanastaTheme.darkTheme,
+      //debugShowCheckedModeBanner: false,
+      defaultTransition: Transition.leftToRightWithFade,
+      transitionDuration: const Duration(milliseconds: 500),
+      getPages: routes,
+      home: const CircularProgressIndicator(),
+    );
   }
 }

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:la_canasta/src/constants/text_string.dart';
 import '../../../../constants/image_strings.dart';
+import 'login_footer_widget.dart';
+import 'login_form_widget.dart';
+import 'login_header_widget.dart';
 //import 'package:firebase_auth/firebase_auth.dart';
 
 class CustomLoginPage extends StatefulWidget {
@@ -32,9 +33,8 @@ class _CustomLoginPageState extends State<CustomLoginPage> {
     }
 
     PhoneAuthOptions options
-
-
  */
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -42,92 +42,32 @@ class _CustomLoginPageState extends State<CustomLoginPage> {
           children: <Widget>[
             if(!isKeyboard)
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.4,
+              height: MediaQuery.of(context).size.height * 0.25,
               child: Container(
                 color: Colors.red,
                 child: Center(
                   child: Image.asset(
-                      farmerImage,
+                    width: MediaQuery.of(context).size.width,
+                    farmerImage,
                     fit: BoxFit.cover,
-                    height: MediaQuery.of(context).size.height * 0.5,
+                    height: MediaQuery.of(context).size.height,
                   ),
                 ),
               ),
             ),
             Expanded(
-              flex: 2,
+              flex: 1,
               child: SizedBox(
                 width: MediaQuery.of(context).size.width * 0.75,
                 child: ListView(
-                  children: <Widget>[
-                    Container(
-                      margin: const EdgeInsets.only(top: 10),
-                      alignment: Alignment.center,
-                      child: const Text(
-                        lcTitleCc,
-                        style: TextStyle(
-                          fontFamily: 'PublicPixel',
-                          color: Colors.red,
-                          fontSize: 30,
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: MediaQuery.of(context).size.height * 0.03),
-                    const Text(
-                      'Compre, venda y experimente productos agrícolas en todas las regiones de Colombia.',
-                      textAlign: TextAlign.center,
-                    ),
-                    SizedBox(height: MediaQuery.of(context).size.height * 0.01),
-                    TextField(
-                      controller: phoneNumberController,
-                      textInputAction: TextInputAction.next,
-                      decoration: const InputDecoration(
-                          labelText: 'Número de teléfono'
-                      ),
-                    ),
-                    SizedBox(height: MediaQuery.of(context).size.height * 0.01),
-                    TextField(
-                      controller: passwordController,
-                      textInputAction: TextInputAction.done,
-                      decoration: const InputDecoration(
-                          labelText: 'Contraseña'
-                      ),
-                    ),
-                    SizedBox(height: MediaQuery.of(context).size.height * 0.01),
-                    SizedBox(
-                      width: double.infinity,
-                      child: ElevatedButton(
-                          onPressed: () => Get.toNamed('/mainpage'),
-                          style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(Colors.black87),
-                            shape: MaterialStateProperty.all<OutlinedBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12)
-                              )
-                            )
-                          ),
-                          child: const Text(
-                            'Acceso',
-                            style: TextStyle(
-                                color: Colors.white,
-                              fontSize: 20
-                            ),
-                          )
-                      )
-                    ),
-                    TextButton(
-                        onPressed: () => Get.toNamed('/signup'),
-                        child: const Text(
-                            'Crear cuenta',
-                          style: TextStyle(
-                            fontSize: 18
-                          ),
-                        )
-                    )
+                  children: const <Widget>[
+                    LoginHeaderWidget(),
+                    LoginForm(),
+                    LoginFooterWidget()
                   ],
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

@@ -67,7 +67,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '625640348358',
     projectId: 'applacanasta',
     storageBucket: 'applacanasta.appspot.com',
-    androidClientId: '625640348358-jsfu08tsumm969uhtt7eccu7rogd32lc.apps.googleusercontent.com',
+    androidClientId: '625640348358-2oc1cv0oe4j7onvb6p769fot1f2f0gcg.apps.googleusercontent.com',
     iosClientId: '625640348358-masdiot74gnjvf4nlitgntg1a5rdb5lb.apps.googleusercontent.com',
     iosBundleId: 'com.example.laCanasta',
   );
@@ -78,7 +78,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '625640348358',
     projectId: 'applacanasta',
     storageBucket: 'applacanasta.appspot.com',
-    androidClientId: '625640348358-jsfu08tsumm969uhtt7eccu7rogd32lc.apps.googleusercontent.com',
+    androidClientId: '625640348358-2oc1cv0oe4j7onvb6p769fot1f2f0gcg.apps.googleusercontent.com',
     iosClientId: '625640348358-m7pnbhsi58f6qiv9of36u947inijf9cv.apps.googleusercontent.com',
     iosBundleId: 'com.example.laCanasta.RunnerTests',
   );

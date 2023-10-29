@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "625640348358-2oc1cv0oe4j7onvb6p769fot1f2f0gcg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.la_canasta",
+            "certificate_hash": "27e1275ad992f1f25c13788706a5ad9f0c21a207"
+          }
+        },
+        {
           "client_id": "625640348358-k4ji8ig9fb0e92cdpfov47cb98hjvevi.apps.googleusercontent.com",
           "client_type": 3
         }
