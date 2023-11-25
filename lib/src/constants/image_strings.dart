@@ -21,3 +21,6 @@ const String onBoardingCupcakes = '$onBoardPath/OnBoardingCupcakes.png';
 // -- Home Placeholders Images
 const String homeDiscount = '$homePath/HomeDiscount.png';
 const String potatoesDiscount = '$homePath/PotatoesDiscount.png';
+const String strawberryDiscount = '$homePath/fresas.jpg';
+const String lemonDiscount = '$homePath/limones.jpg';
+const String mangoDiscount = '$homePath/mangos.jpg';

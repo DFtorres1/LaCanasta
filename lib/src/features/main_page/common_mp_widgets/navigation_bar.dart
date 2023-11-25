@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:la_canasta/src/features/add_pages/screens/add_screen.dart';
 import 'package:la_canasta/src/features/main_page/screens/chats/chats_screen.dart';
 import 'package:la_canasta/src/features/main_page/screens/news/news_screen.dart';
 import 'package:la_canasta/src/features/main_page/screens/profile/profile_screen.dart';
@@ -20,7 +21,7 @@ class _MainNavigationBar extends State<MainNavigationBar>{
   final screens = [
     const CustomHomePage(),
     const NewsScreen(),
-    const ChatsScreen(),
+    const AddScreen(),
     const ChatsScreen(),
     const ProfileScreen(),
   ];
